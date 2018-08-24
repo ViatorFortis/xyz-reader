@@ -119,9 +119,7 @@ public class ArticleDetailFragment extends Fragment implements
                 mRootView.findViewById(R.id.draw_insets_frame_layout);
         mDrawInsetsFrameLayout.setOnInsetsCallback(new DrawInsetsFrameLayout.OnInsetsCallback() {
             @Override
-            public void onInsetsChanged(Rect insets) {
-                mTopInset = insets.top;
-            }
+            public void onInsetsChanged(Rect insets) { mTopInset = insets.top; }
         });
 
         mScrollView = (ObservableScrollView) mRootView.findViewById(R.id.scrollview);
